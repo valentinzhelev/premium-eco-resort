@@ -18,17 +18,34 @@
     <header class="site-header">
       <div class="container nav">
         <a class="brand" href="index.html">Arboréa</a>
-        <nav class="nav__links" aria-label="Main navigation">
-          <a href="index.html">Home</a>
-          <a href="villas.html">Villas</a>
-          <a href="villa-detail.html">Villa Detail</a>
-          <a href="experiences.html">Experiences</a>
-          <a href="sustainability.html">Sustainability</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-        <div class="nav__actions">
-          <a class="btn btn--secondary" href="villas.html">Back to Villas</a>
-          <a class="btn btn--primary" href="contact.html">Book this Villa</a>
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+        >
+          <span class="sr-only">Menu</span>
+          <span class="nav__toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav__panel" id="nav-panel" aria-hidden="true">
+          <div class="nav__panel-inner">
+            <button class="nav__close" type="button" aria-label="Close menu">
+              ✕
+            </button>
+            <nav class="nav__links" aria-label="Main navigation">
+              <a href="index.html">Home</a>
+              <a href="villas.html">Villas</a>
+              <a href="villa-detail.html">Villa Detail</a>
+              <a href="experiences.html">Experiences</a>
+              <a href="sustainability.html">Sustainability</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav__actions">
+              <a class="btn btn--secondary" href="villas.html">Back to Villas</a>
+              <a class="btn btn--primary" href="contact.html">Book this Villa</a>
+            </div>
+          </div>
         </div>
       </div>
     </header>

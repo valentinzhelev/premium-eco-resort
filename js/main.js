@@ -1,4 +1,7 @@
 const header = document.querySelector(".site-header");
+const navToggle = document.querySelector(".nav__toggle");
+const navPanel = document.querySelector(".nav__panel");
+const navClose = document.querySelector(".nav__close");
 
 const setHeaderState = () => {
   if (!header) {
@@ -9,6 +12,57 @@ const setHeaderState = () => {
 
 setHeaderState();
 window.addEventListener("scroll", setHeaderState);
+
+const isMobileNav = () => window.matchMedia("(max-width: 960px)").matches;
+
+const setNavState = (open) => {
+  if (!navToggle || !navPanel) {
+    return;
+  }
+  if (!isMobileNav()) {
+    navToggle.setAttribute("aria-expanded", "false");
+    navPanel.setAttribute("aria-hidden", "false");
+    document.body.classList.remove("nav-open");
+    return;
+  }
+  navToggle.setAttribute("aria-expanded", String(open));
+  navPanel.setAttribute("aria-hidden", String(!open));
+  document.body.classList.toggle("nav-open", open);
+};
+
+setNavState(false);
+
+if (navToggle) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+    setNavState(!isOpen);
+  });
+}
+
+const navLinks = document.querySelectorAll(".nav__links a");
+navLinks.forEach((link) => link.addEventListener("click", () => setNavState(false)));
+
+if (navPanel) {
+  navPanel.addEventListener("click", (event) => {
+    if (event.target === navPanel) {
+      setNavState(false);
+    }
+  });
+}
+
+if (navClose) {
+  navClose.addEventListener("click", () => setNavState(false));
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    setNavState(false);
+  }
+});
+
+window.addEventListener("resize", () => {
+  setNavState(false);
+});
 
 const revealItems = document.querySelectorAll(".reveal");
 if (revealItems.length) {
