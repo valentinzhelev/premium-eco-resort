@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Booking | Arboréa Resort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body class="page page--contact">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">Arboréa</a>
+        <nav class="nav__links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="villas.html">Villas</a>
+          <a href="villa-detail.html">Villa Detail</a>
+          <a href="experiences.html">Experiences</a>
+          <a href="sustainability.html">Sustainability</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav__actions">
+          <a class="btn btn--secondary" href="villas.html">Explore Villas</a>
+          <a class="btn btn--primary" href="contact.html">Book a Stay</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--short">
+        <div class="hero__media">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=80"
+            alt="Lagoon at dusk"
+          />
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__content reveal">
+          <span class="eyebrow">Contact</span>
+          <h1>Reserve your private retreat.</h1>
+          <p>
+            Our concierge is ready to craft your itinerary and confirm
+            availability within 12 hours.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div class="reveal">
+            <div class="section__header">
+              <span class="eyebrow">Booking Request</span>
+              <h2>Tell us how you want to feel.</h2>
+            </div>
+            <form class="form">
+              <div class="form__row">
+                <label class="input">
+                  Name
+                  <input type="text" name="name" placeholder="Your full name" />
+                </label>
+                <label class="input">
+                  Email
+                  <input type="email" name="email" placeholder="you@email.com" />
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="input">
+                  Preferred dates
+                  <input type="text" name="dates" placeholder="Oct 12 - Oct 18" />
+                </label>
+                <label class="input">
+                  Guests
+                  <select>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                  </select>
+                </label>
+              </div>
+              <label class="input">
+                Message
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Villas you love, wellness rituals, arrival time..."
+                ></textarea>
+              </label>
+              <button class="btn btn--primary" type="submit">
+                Request Availability
+              </button>
+            </form>
+          </div>
+          <div class="reveal">
+            <div class="section__header">
+              <span class="eyebrow">Concierge</span>
+              <h2>Speak with our team.</h2>
+            </div>
+            <div class="stack">
+              <div class="card">
+                <div class="card__body">
+                  <p>Concierge: +34 920 114 500</p>
+                  <p>Email: stay@arborearesort.com</p>
+                  <p>WhatsApp: +34 620 501 880</p>
+                  <p>Valle del Silencio, Spain</p>
+                  <div class="pill-row">
+                    <span class="chip">24/7 Support</span>
+                    <span class="chip">Private transfers</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__body">
+                  <h3 class="card__title">Travel information</h3>
+                  <ul class="card__list">
+                    <li>Nearest airport: Vigo (90 min) or Porto (2.5 hrs)</li>
+                    <li>Private transfers arranged on request</li>
+                    <li>Helipad access for chartered arrivals</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
+          <div class="section__header reveal">
+            <span class="eyebrow">Location</span>
+            <h2>Forest and water at the edge of silence.</h2>
+          </div>
+          <div class="card reveal">
+            <div class="card__body">
+              <div class="feature-image">
+                <img
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80"
+                  alt="Map placeholder with forest landscape"
+                />
+              </div>
+              <p class="text-muted">
+                Map placeholder — exact coordinates shared upon booking.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand" href="index.html">Arboréa</a>
+          <p>
+            A premium eco retreat where forest silence meets refined hospitality.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="pill-row">
+            <a href="villas.html">Villas</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="sustainability.html">Sustainability</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Concierge: +34 920 114 500</p>
+          <p>Email: stay@arborearesort.com</p>
+          <p>Valle del Silencio, Spain</p>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <label class="input">
+            Email address
+            <input type="email" placeholder="Your email" />
+          </label>
+          <button class="btn btn--secondary" type="button">Subscribe</button>
+        </div>
+      </div>
+      <div class="container footer__legal">
+        © 2026 Arboréa Resort. All rights reserved. Privacy &amp; Terms.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

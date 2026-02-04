@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villas | Arboréa Resort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body class="page page--villas">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">Arboréa</a>
+        <nav class="nav__links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="villas.html">Villas</a>
+          <a href="villa-detail.html">Villa Detail</a>
+          <a href="experiences.html">Experiences</a>
+          <a href="sustainability.html">Sustainability</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav__actions">
+          <a class="btn btn--secondary" href="experiences.html">Wellness</a>
+          <a class="btn btn--primary" href="contact.html">Book a Stay</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--short">
+        <div class="hero__media">
+          <img
+            src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=2000&q=80"
+            alt="Forest villa exterior"
+          />
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__content reveal">
+          <span class="eyebrow">Villas</span>
+          <h1>Immersive stays crafted for privacy and light.</h1>
+          <p>
+            Choose from cliff-edge panoramas, canopy suites, and lagoon pavilions
+            curated for restoration and quiet rituals.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__header reveal">
+            <div class="section__header-row">
+              <h2>Find the villa that fits your pace.</h2>
+              <div class="filters">
+                <label class="input">
+                  Capacity
+                  <select>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                  </select>
+                </label>
+                <label class="input">
+                  View
+                  <select>
+                    <option>Forest</option>
+                    <option>Ocean</option>
+                    <option>Lagoon</option>
+                  </select>
+                </label>
+                <label class="input">
+                  Private Pool
+                  <select>
+                    <option>Any</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+                </label>
+                <label class="input">
+                  Price
+                  <select>
+                    <option>€400 - €600</option>
+                    <option>€600 - €800</option>
+                    <option>€800+</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80"
+                  alt="Ocean view villa"
+                />
+                <span class="badge card__badge">Ocean View</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Lumen Cliff Villa</h3>
+                <div class="card__meta">
+                  <span>2 Guests</span>
+                  <span>60 m²</span>
+                </div>
+                <p>Terrace sunsets, plunge pool, and private dining.</p>
+                <div class="card__footer">
+                  <span class="chip">From €540 / night</span>
+                  <a class="btn btn--secondary" href="villa-detail.html">View Details</a>
+                </div>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80"
+                  alt="Lagoon pavilion"
+                />
+                <span class="badge card__badge">Lagoon Edge</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Lagoon Ember Pavilion</h3>
+                <div class="card__meta">
+                  <span>3 Guests</span>
+                  <span>72 m²</span>
+                </div>
+                <p>Warm interiors, lounge fire, and sunrise rituals.</p>
+                <div class="card__footer">
+                  <span class="chip">From €620 / night</span>
+                  <a class="btn btn--secondary" href="villa-detail.html">View Details</a>
+                </div>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=1200&q=80"
+                  alt="Forest wellness villa"
+                />
+                <span class="badge card__badge">Wellness Suite</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Canopy Glass Suite</h3>
+                <div class="card__meta">
+                  <span>2 Guests</span>
+                  <span>55 m²</span>
+                </div>
+                <p>Indoor-outdoor bathing and curated wellness kits.</p>
+                <div class="card__footer">
+                  <span class="chip">From €480 / night</span>
+                  <a class="btn btn--secondary" href="villa-detail.html">View Details</a>
+                </div>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+                  alt="Forest retreat villa"
+                />
+                <span class="badge card__badge">Forest Retreat</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Cedar Grove Villa</h3>
+                <div class="card__meta">
+                  <span>2 Guests</span>
+                  <span>58 m²</span>
+                </div>
+                <p>Canopy decks, morning tea, and silence suites.</p>
+                <div class="card__footer">
+                  <span class="chip">From €510 / night</span>
+                  <a class="btn btn--secondary" href="villa-detail.html">View Details</a>
+                </div>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80"
+                  alt="Riverside villa"
+                />
+                <span class="badge card__badge">Riverside</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Riverstone Hideaway</h3>
+                <div class="card__meta">
+                  <span>2 Guests</span>
+                  <span>62 m²</span>
+                </div>
+                <p>Soaking tub with river views and private lounge.</p>
+                <div class="card__footer">
+                  <span class="chip">From €565 / night</span>
+                  <a class="btn btn--secondary" href="villa-detail.html">View Details</a>
+                </div>
+              </div>
+            </article>
+            <article class="card reveal">
+              <div class="card__media">
+                <img
+                  src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1200&q=80"
+                  alt="Spa suite"
+                />
+                <span class="badge card__badge">Spa Suite</span>
+              </div>
+              <div class="card__body">
+                <h3 class="card__title">Aurora Spa Villa</h3>
+                <div class="card__meta">
+                  <span>2 Guests</span>
+                  <span>68 m²</span>
+                </div>
+                <p>Private treatment room and guided rituals.</p>
+                <div class="card__footer">
+                  <span class="chip">From €690 / night</span>
+                  <a class="btn btn--secondary" href="villa-detail.html">View Details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="pagination">
+            <button class="btn btn--secondary" type="button">Previous</button>
+            <span class="chip">Page 1 of 3</span>
+            <button class="btn btn--secondary" type="button">Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand" href="index.html">Arboréa</a>
+          <p>
+            A premium eco retreat where forest silence meets refined hospitality.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="pill-row">
+            <a href="villas.html">Villas</a>
+            <a href="experiences.html">Experiences</a>
+            <a href="sustainability.html">Sustainability</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Concierge: +34 920 114 500</p>
+          <p>Email: stay@arborearesort.com</p>
+          <p>Valle del Silencio, Spain</p>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <label class="input">
+            Email address
+            <input type="email" placeholder="Your email" />
+          </label>
+          <button class="btn btn--secondary" type="button">Subscribe</button>
+        </div>
+      </div>
+      <div class="container footer__legal">
+        © 2026 Arboréa Resort. All rights reserved. Privacy &amp; Terms.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
